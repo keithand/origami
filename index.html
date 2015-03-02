@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Origami Notes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="container">
+
+            <nav id="side-nav">
+                <div id="logo">
+                    <img src="img/logo.png" width="170">
+                </div>
+
+                <ul>
+                    <li>
+                        <img src="img/account.png" width="20">
+                        Account
+                    </li>
+                    <li>
+                        <img src="img/category.png" width="20">
+                        Categories
+                    </li>
+                    <li>
+                        <img src="img/shared.png" width="20">
+                        Shared
+                    </li>                
+                </ul>
+            </nav>
+
+            <nav id="top-nav">
+                <ul>
+                    <li>
+                       <img src="img/add.png" width="30">     
+                    </li>
+                    <li>
+                       <img src="img/download.png" width="30">     
+                    </li>
+                    <li>
+                       <img src="img/search.png" width="30">     
+                    </li>
+                    <li>
+                       <img src="img/settings.png" width="30">     
+                    </li>
+                </ul>
+            </nav>
+            <section id="widget">
+              <div id="widget-search">
+                    <form>
+                    <img src="img/search.png" width="15">
+                    <input type="text" name="search" placeholder="Search">
+                  </form>
+              </div>  
+              <ul>
+                  <li>
+                      <div class="category-list-item">
+                          <input type="checkbox" name="category" value"" class="category-checkbox">
+                          <p class="category-name">Biology Notes</p>
+                          <p class="category-date">Jan 7</p>
+                      </div>
+                      <hr>
+                  </li>
+                  <li>
+                      <div class="category-list-item">
+                          <input type="checkbox" name="category" value"" class="category-checkbox">
+                          <p class="category-name">Colleges</p>
+                          <p class="category-date">Feb 19</p>
+                      </div>
+                      <hr>
+                  </li>
+              </ul>
+
+              <button type="button" class="btn">
+                  Add Category
+              </button>
+
+            </section>
+
+            <section id="main">
+                <div id="main-settings">
+                    <span><b>B</b></span>
+                    <span><i>I</i></span>
+                    <span><u>U</u></span>
+                </div> <!-- Closing #main settings -->
+
+                <div id="category-notes">
+                    <h2 class="category-active">Colleges</h2>
+                    <ul>
+                        <li class="category-point">
+                            <img src="img/expand.png" width="10" class="category-point-expand">
+                            <p class="category-point-text">Boston University - College of Liberal Arts</p>
+                            <img src="img/close.png" width="15" class="category-point-close">
+                            <hr>
+                        </li>
+                        <li class="category-point">
+                            <img src="img/expand.png" width="10" class="category-point-expand">
+                            <p class="category-point-text">Academy of Art University - College of Web and New Media</p>
+                            <img src="img/close.png" width="15" class="category-point-close">
+                            <hr>
+                        </li>
+                    </ul>
+                </div> <!-- Closing #category-notes -->
+                <button type="button" class="btn">
+                      Add Note
+                </button>
+            </section>
+
+            <footer>
+                
+            </footer>
+
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
