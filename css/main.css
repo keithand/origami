@@ -12,9 +12,10 @@
 
 html {
     color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+    font-size: .8em;
+    line-height: 1.3;
     height:100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {padding: 0; margin: 0;}
@@ -106,6 +107,22 @@ body {
     height:100%;
 }
 
+.btn {
+    background: #ffcc80; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffcc80 0%, #ff9800 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcc80), color-stop(100%,#ff9800)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffcc80 0%,#ff9800 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffcc80 0%,#ff9800 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffcc80 0%,#ff9800 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffcc80 0%,#ff9800 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc80', endColorstr='#ff9800',GradientType=0 ); /* IE6-9 */
+    border:rgb(0,0,0,.4);
+}
+
+.btn:focus{
+    outline: 0;
+}
+
 
 /* ==========================================================================
     TOP NAVIGATION
@@ -136,7 +153,7 @@ body {
     float:left;
     display:block;
     overflow: hidden;
-    height:calc(100% + 40px);
+    height:109%;
 }
 
 #logo {
@@ -165,12 +182,12 @@ body {
    ========================================================================== */
 
 #widget {
-    width:25%;
+    width:30%;
     background-color: rgba(0,0,0,.1);
     position:relative;
     overflow: hidden;
     display: block;
-    height:100%;
+    height:calc(100%);
     margin-right: 0;
     float:left;
 }
@@ -239,9 +256,10 @@ body {
     width:150px;
     position: absolute;
     display: block;
-    bottom:20px;
+    bottom:40px;
     left:0;
     right:0;
+    padding:10px;
 }
 
 
@@ -252,12 +270,13 @@ body {
 #main {
     float:left;
     overflow:hidden;
-    width:55%;
+    width:50%;
     display: relative;
     top:0;
     right:0;
     left:0;
     bottom:0;
+    height: 100%;
 }
 
 #main-settings {
@@ -309,19 +328,26 @@ body {
     float:right;
 }
 
-#main button .btn {
-    margin:auto;
-    position:absolute;
-    bottom:20px;
-    left:0;
-    right:0;
-    width:100px;
-    overflow: auto;
-    clear:both;
+#main button.btn {
+    position:relative;
+    bottom:0;
+    left:43%;
+    padding:10px;
+    /*width:100px;*/
+    /*overflow: auto;*/
+    /*clear:both;*/
 }
 
+/* ==========================================================================
+    MAIN NOTES SECTION
+   ========================================================================== */
 
-
+/*footer{
+    width:100%;
+    clear:both;
+    background-color: red;
+    height:40px;
+}*/
 
 
 
