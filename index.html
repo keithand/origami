@@ -55,63 +55,40 @@
             <nav id="top-nav">
                 <ul>
                     <li>
-                       <img src="img/add.png" width="30">     
+                       <a href="" id="top-nav-add-category">
+                         <img src="img/add.png" alt="Add Category" width="30">
+                       </a>     
                     </li>
                     <li>
-                       <img src="img/download.png" width="30">     
+                       <img src="img/search.png" alt="search" width="30">     
                     </li>
                     <li>
-                       <img src="img/search.png" width="30">     
-                    </li>
-                    <li>
-                       <img src="img/settings.png" width="30">     
+                       <img src="img/settings.png" alt="Settings" width="30">     
                     </li>
                 </ul>
             </nav>
             <section id="widget">
+              <button type="button" class="btn" id="add-category" name="add-category">
+                  Add Category
+              </button>
               <div id="widget-search">
                     <form>
                     <img src="img/search.png" width="15">
                     <input type="text" name="search" placeholder="Search">
                   </form>
               </div>  
-              <ul>
-                  <li>
-                      <div class="category-list-item">
-                          <input type="checkbox" name="category" value"" class="category-checkbox">
-                          <p class="category-name">Biology Notes</p>
-                          <p class="category-date">Jan 7</p>
-                      </div>
-                      <hr>
-                  </li>
-                  <li>
-                      <div class="category-list-item">
-                          <input type="checkbox" name="category" value="" id="category-checkbox">
-                          <p class="category-name">Colleges</p>
-                          <p class="category-date">Feb 19</p>
-                      </div>
-                      <hr>
-                  </li>
-              </ul>
-
-              <button type="button" class="btn" id="add-category" name="add-category">
-                  Add Category
-              </button>
-              
-               
+              <ul class="category-list">
+              </ul>                        
             </section>
 
             <section id="main">
-                <div id="main-settings">
-                    <span><b>B</b></span>
-                    <span><i>I</i></span>
-                    <span><u>U</u></span>
-                </div> <!-- Closing #main settings -->
-
                 <div id="category-notes">
+                    <button type="button" class="btn">
+                      Add Note
+                    </button>
                     <h2 class="category-active">Colleges</h2>
                     <ul>
-                        <li class="category-point">
+<!--                         <li class="category-point">
                             <img src="img/expand.png" width="10" class="category-point-expand">
                             <p class="category-point-text">Boston University - College of Liberal Arts</p>
                             <img src="img/close.png" width="15" class="category-point-close">
@@ -122,12 +99,9 @@
                             <p class="category-point-text">Academy of Art University - College of Web and New Media</p>
                             <img src="img/close.png" width="15" class="category-point-close">
                             <hr>
-                        </li>
+                        </li> -->
                     </ul>
                 </div> <!-- Closing #category-notes -->
-                <button type="button" class="btn">
-                      Add Note
-                </button>
             </section>
 
             <footer>
@@ -137,7 +111,7 @@
         </div>
 
       	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-
+        <script src="js/date.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
